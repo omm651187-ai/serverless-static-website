@@ -1,11 +1,11 @@
 # Serverless Static Website
 
-This project provisions a static website on AWS using Terraform.
+Simple AWS static website deployed with Terraform.
 
-## Requirements
+## Prerequisites
 
-- Terraform 1.0+
-- AWS CLI configured with valid credentials
+- Terraform installed
+- AWS CLI configured
 
 ## Deploy
 
@@ -15,9 +15,4 @@ terraform plan
 terraform apply
 ```
 
-## Files
-
-- `main.tf` - Terraform configuration
-- `variable.tf` - variables
-- `outputs.tf` - outputs
-- `website/` - static website content
+This creates an S3 bucket and CloudFront distribution for the site in `website/`.
